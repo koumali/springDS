@@ -29,7 +29,7 @@ public class SecurityConfig {
         http.cors().configurationSource(request ->{
 //                        new CorsConfiguration().applyPermitDefaultValues()
             var cors = new CorsConfiguration();
-            cors.setAllowedOrigins(Arrays.asList("http://127.0.0.1","http://127.0.0.1:4200/","http://localhost:4200/","http://localhost"));
+            cors.setAllowedOrigins(Arrays.asList("https://dse-banking.netlify.app/","http://127.0.0.1","http://127.0.0.1:4200/","http://localhost:4200/","http://localhost"));
             cors.setAllowedMethods(List.of("GET","POST", "PUT", "DELETE", "OPTIONS","PATCH"));
             cors.setAllowedHeaders(List.of("*"));
             return cors;
